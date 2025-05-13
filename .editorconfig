@@ -1,0 +1,24 @@
+# EditorConfig для всех файлов
+root = true
+
+[*]
+# Установите отступы в пробелах
+indent_style = space
+# Размер отступа (количество пробелов)
+indent_size = 2
+# Конец строки
+end_of_line = lf
+# Кодировка файлов
+charset = utf-8
+# Удаление пробелов в конце строк
+trim_trailing_whitespace = true
+# Добавление пустой строки в конце файла
+insert_final_newline = true
+
+[*.md]
+# Особая настройка для Markdown файлов
+trim_trailing_whitespace = false
+
+[*.yml,*.yaml]
+# Особая настройка для YAML файлов
+indent_size = 2

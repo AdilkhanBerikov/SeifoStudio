@@ -1,0 +1,21 @@
+{
+  "name": "seifostudio",
+  "version": "1.0.0",
+  "description": "Начало работы с Seifo Studio",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
+    "parcel": "^2.13.3",
+    "sass": "^1.83.4"
+  },
+  "dependencies": {
+    "reset.css": "^2.0.2"
+  }
+}
