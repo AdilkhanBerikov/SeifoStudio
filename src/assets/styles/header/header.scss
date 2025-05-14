@@ -1,0 +1,23 @@
+@use "../variables" as *;
+
+.header__nav {
+  display: grid;
+  justify-content: center;
+}
+
+.header__button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.header__button-text {
+  color: var(--color-header-button-text);
+  font: var(--font-header-button-text);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.header__button-icon {
+  color: var(--color-header-button-icon);
+}

@@ -1,14 +1,17 @@
 //Основные цвета
 $color-black: #000000;
-$color-black-opacity-light: rgba($color-black, 0.05);
-$color-black-opacity-light-2: rgba($color-black, 0.1);
-$color-black-opacity-light-3: rgba($color-black, 0.2);
-$color-black-opacity: rgba($color-black, 0.3);
-$color-black-opacity-medium: rgba($color-black, 0.6);
-$color-black-opacity-medium-2: rgba($color-black, 0.5);
 $color-white: #ffffff;
+$color-beige-ivory: #F1EDE5;
+$color-beige-grey: #BEBAB4;
+$color-grey-graphite: #686B6B;
+
 
 :root {
   /* Компонентные цвета */
-
+  //Header
+  --color-header-background: #{$color-beige-ivory};
+  --color-header-border: #{$color-beige-grey};
+  --color-nav-link: #{$color-black};
+  --color-header-button-text: #{$color-black};
+  --color-header-button-icon: #{$color-grey-graphite};
 }

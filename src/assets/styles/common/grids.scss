@@ -1,0 +1,12 @@
+@use "../variables" as *;
+
+.grid {
+  display: grid;
+}
+
+.grid.-header {
+  padding-top: 50px;
+  padding-bottom: 15px;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+}
