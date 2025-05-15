@@ -1,0 +1,44 @@
+// Основной шрифт
+$font-family-main: "Roboto", "Arial", sans-serif;
+
+// Базовые переменные
+:root {
+  //--font-h1: 700 36px/40px #{$font-family-main};
+  //--font-h2: 500 30px/35px #{$font-family-main};
+  //--font-h3: 700 24px/24px #{$font-family-main};
+  //--font-h4: 700 21px/21px #{$font-family-main};
+  //--font-h5: 700 18px/18px #{$font-family-main};
+  //--font-h6: 700 17px/20px #{$font-family-main};
+  //--font-h7: 700 38px/38px #{$font-family-main};
+  //--font-h8: 700 20px/20px #{$font-family-main};
+
+  //--font-body-bold: 700 16px/18px #{$font-family-main};
+  //--font-body-bold-2: 700 14px/16px #{$font-family-main};
+  --font-body-medium: 500 32px/56px #{$font-family-main};
+  --font-body-regular: 400 18px/24px #{$font-family-main};
+
+  --font-caption-regular: 400 16px/15px #{$font-family-main};
+
+  --font-small-regular: 400 14px/20px #{$font-family-main};
+  //--font-body-light: 300 16px/18px #{$font-family-main};
+  //
+  //--font-caption-regular: 400 14px/14px #{$font-family-main};
+  //
+  //--font-tooltip: 400 20px/20px #{$font-family-main};
+
+  //Header
+  --font-header-nav-link: var(--font-small-regular);
+  --font-header-button-text: var(--font-small-regular);
+
+  //Footer
+  --font-footer-heading: var(--font-body-medium);
+  --font-footer-nav-link: var(--font-small-regular);
+  --font-footer-description: var(--font-body-regular);
+
+  //Input
+  --font-input-text: var(--font-small-regular);
+  --font-input-placeholder: var(--font-small-regular);
+
+  //Button
+  --font-button: var(--font-small-regular);
+}

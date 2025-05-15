@@ -1,0 +1,27 @@
+@use "../variables" as *;
+
+.grid {
+  display: grid;
+
+  &.-header {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: center;
+  }
+
+  &.-footer {
+    padding-top: 97px;
+    padding-bottom: 214px;
+    grid-template-columns: 1fr min-content min-content;
+  }
+}
+
+//.flex {
+//  display: flex;
+//
+//  &.-footer {
+//    padding-top: 97px;
+//    padding-bottom: 214px;
+//  }
+//}

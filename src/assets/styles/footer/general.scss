@@ -1,0 +1,7 @@
+@use "../variables" as *;
+
+.page__footer {
+  position: relative;
+  background-color: var(--color-footer-background);
+  border-top: 1px solid var(--color-footer-border);
+}

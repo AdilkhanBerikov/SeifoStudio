@@ -1,0 +1,38 @@
+//Основные цвета
+$color-black: #000000;
+$color-black-opacity-light: rgba($color-black, 0.2);
+$color-white: #ffffff;
+$color-beige-ivory: #F1EDE5;
+$color-beige-grey: #BEBAB4;
+$color-grey-graphite: #686B6B;
+$color-grey-dark: #5D5D5D;
+$color-green-dark: #004638;
+
+
+:root {
+  /* Компонентные цвета */
+  //Header
+  --color-header-background: #{$color-beige-ivory};
+  --color-header-border: #{$color-beige-grey};
+  --color-header-nav-link: #{$color-black};
+  --color-header-button-text: #{$color-black};
+  --color-header-button-icon: #{$color-grey-graphite};
+
+  //Footer
+  --color-footer-background: #{$color-beige-ivory};
+  --color-footer-border: #{$color-beige-grey};
+  --color-footer-heading: #{$color-black};
+  --color-footer-nav-link: #{$color-black};
+  --color-footer-description: #{$color-grey-dark};
+
+  //Input
+  --color-input-text: #{$color-black};
+  --color-input-border: #{$color-black-opacity-light};
+  --color-input-border-focus: #{$color-black};
+  --color-input-caret: #{$color-beige-grey};
+  --color-input-placeholder-text: #{$color-black};
+
+  //Button
+  --color-button: #{$color-white};
+  --color-button-background: #{$color-green-dark};
+}
