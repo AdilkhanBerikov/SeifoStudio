@@ -1,0 +1,39 @@
+@use "../variables" as *;
+
+.input {
+  --input-width: 287px;
+  padding: 6px 0;
+  width: var(--input-width);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-input-border);
+  font: var(--font-input-text);
+  color: var(--color-input-text);
+  caret-color: var(--color-input-caret);
+  outline: none;
+  transition: border-bottom-color $transition-duration;
+
+  &::placeholder {
+    font: var(--font-input-placeholder);
+    color: var(--color-input-placeholder-text);
+    text-transform: uppercase;
+    //transition: color $transition-duration;
+  }
+
+  //&:hover {
+  //  background-color: var(--color-input-background-hover);
+  //
+  //  &::placeholder {
+  //    color: var(--color-input-placeholder-text-hover);
+  //  }
+  //}
+  //
+
+  &:focus-visible {
+    border-bottom-color: var(--color-input-border-focus);
+  }
+
+  //&.is-error {
+  //  color: var(--color-input-is-error-text);
+  //}
+}

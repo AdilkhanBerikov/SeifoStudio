@@ -5,6 +5,22 @@
   justify-content: center;
 }
 
+.header__nav-list {
+  margin-inline: 50px;
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+
+.header__nav-link {
+  color: var(--color-header-nav-link);
+  font: var(--font-header-nav-link);
+  letter-spacing: 1.4px;
+  outline: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .header__button-wrapper {
   display: flex;
   align-items: center;

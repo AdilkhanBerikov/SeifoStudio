@@ -1,0 +1,33 @@
+@use "../variables" as *;
+
+.button {
+  padding: 8px 26px 7px 25px;
+  width: fit-content;
+  background-color: var(--color-button-background);
+  color: var(--color-button);
+  font: var(--font-button);
+  letter-spacing: 1.4px;
+  border: none;
+  border-radius: $border-radius;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+  //transition: background-color $transition-duration, color $transition-duration, box-shadow $transition-duration;
+
+  //&:hover {
+  //  background-color: var(--color-button-background-hover);
+  //}
+  //
+  //&:active {
+  //  color: var(--color-button-active-text-opacity);
+  //}
+}
+
+.button__icon {
+  --button-icon-width: 24px;
+  --button-icon-height: 24px;
+  width: var(--button-icon-width);
+  height: var(--button-icon-height);
+}
