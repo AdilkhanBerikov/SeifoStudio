@@ -1,0 +1,129 @@
+@use "../variables" as *;
+
+.main-section {
+  padding-top: 40px;
+  padding-bottom: 150px;
+  background-color: var(--color-main-section-background);
+}
+
+.main-section__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: max-content max-content;
+}
+
+.main-section__title {
+  position: relative;
+  margin-top: 123px;
+  margin-bottom: 134px;
+  display: grid;
+  max-width: 693px;
+  z-index: $z-index-low;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.main-section__heading {
+  margin-bottom: 15px;
+  color: var(--color-main-section-heading);
+  font: var(--font-main-section-heading);
+  letter-spacing: -0.98px;
+  text-transform: uppercase;
+}
+
+.main-section__description {
+  margin-bottom: 25px;
+  color: var(--color-main-section-description);
+  font: var(--font-main-section-description);
+  letter-spacing: 2.52px;
+  text-transform: uppercase;
+}
+
+.main-section__socials-list {
+  margin-bottom: 41px;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  grid-column: 1;
+  grid-row: 2;
+  z-index: $z-index-low;
+}
+
+.main-section__socials-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.main-section__socials-image {
+  border-radius: $border-radius-small;
+}
+
+.main-section__elements {
+  margin-left: -39px;
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+
+.main-section__elements-wrapper {
+  position: relative;
+  width: 626px;
+  height: 745px;
+  z-index: 0;
+}
+
+.main-section__element {
+  position: absolute;
+  width: var(--main-section-element-width);
+  height: var(--main-section-element-height);
+
+  &.-circle {
+    --main-section-element-width: 159px;
+    --main-section-element-height: 161px;
+    top: auto;
+    left: auto;
+    right: 70px;
+    bottom: 0;
+    border: 27px solid var(--color-main-section-element-background);
+    border-radius: 50%;
+  }
+
+  &.-cross {
+    --main-section-element-width: 118px;
+    --main-section-element-height: 118px;
+    top: auto;
+    left: 7px;
+    right: auto;
+    bottom: 128px;
+  }
+
+  &.-statue {
+    --main-section-element-width: 581px;
+    --main-section-element-height: 704px;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: auto;
+  }
+
+  &.-columns {
+    --main-section-element-width: 395px;
+    --main-section-element-height: 663px;
+    top: 17px;
+    left: 20px;
+    right: auto;
+    bottom: auto;
+  }
+
+  &.-circularity {
+    --main-section-element-width: 340px;
+    --main-section-element-height: 340px;
+    top: 40px;
+    left: auto;
+    right: 0;
+    bottom: auto;
+    background-color: var(--color-main-section-element-background);
+    border-radius: 50%;
+  }
+}

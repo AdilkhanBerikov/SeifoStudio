@@ -1,8 +1,7 @@
 @use "../variables" as *;
 
 .button {
-  padding: 8px 26px 7px 25px;
-  width: fit-content;
+  padding: 15px 26px 14px 25px;
   background-color: var(--color-button-background);
   color: var(--color-button);
   font: var(--font-button);
@@ -23,6 +22,11 @@
   //&:active {
   //  color: var(--color-button-active-text-opacity);
   //}
+
+  &.-alternate {
+    padding: 15px 26px 14px 23px;
+    gap: 24px;
+  }
 }
 
 .button__icon {
