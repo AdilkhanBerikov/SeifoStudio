@@ -14,11 +14,12 @@
 }
 
 .main-section__title {
+  --main-section-title-max-width: 693px;
   position: relative;
   margin-top: 123px;
   margin-bottom: 134px;
   display: grid;
-  max-width: 693px;
+  max-width: var(--main-section-title-max-width);
   z-index: $z-index-low;
   grid-column: 1;
   grid-row: 1;
@@ -67,9 +68,11 @@
 }
 
 .main-section__elements-wrapper {
+  --main-section-element-wrapper-width: 626px;
+  --main-section-element-wrapper-height: 745px;
   position: relative;
-  width: 626px;
-  height: 745px;
+  width: var(--main-section-element-wrapper-width);
+  height: var(--main-section-element-wrapper-height);
   z-index: 0;
 }
 
