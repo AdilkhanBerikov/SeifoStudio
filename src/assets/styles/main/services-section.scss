@@ -14,6 +14,7 @@
   color: var(--color-services-section-heading);
   font: var(--font-services-section-heading);
   letter-spacing: -0.98px;
+  text-transform: uppercase;
 }
 
 .services-section__cards {
@@ -38,6 +39,7 @@
 
 .services-section__subheading-wrapper {
   --services-section-subheading-wrapper-height: 40px;
+  text-align: center;
   height: var(--services-section-subheading-wrapper-height);
   display: flex;
   align-items: center;
@@ -48,6 +50,7 @@
   color: var(--color-services-section-card-subheading);
   font: var(--font-services-section-card-subheading);
   letter-spacing: 1.26px;
+  text-transform: uppercase;
 }
 
 .services-section__card-title {

@@ -1,0 +1,65 @@
+@use "../variables" as *;
+
+.portfolio-section {
+  padding-bottom: 113px;
+  background-color: var(--color-portfolio-section-background);
+}
+
+.portfolio-section__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-section__picture {
+  --portfolio-section-picture-width: 657px;
+  --portfolio-section-picture-height: 518px;
+  position: relative;
+  width: var(--portfolio-section-picture-width);
+  height: var(--portfolio-section-picture-height);
+  z-index: 0;
+}
+
+.portfolio-section__image {
+  --portfolio-section-image-width: 826px;
+  --portfolio-section-image-height: 566px;
+  position: absolute;
+  top: 0;
+  left: -170px;
+  width: var(--portfolio-section-image-width);
+  height: var(--portfolio-section-image-height);
+}
+
+.portfolio-section__title {
+  margin-left: 30px;
+  display: grid;
+  grid-template-rows: repeat(5, min-content);
+}
+
+.portfolio-section__subheading {
+  color: var(--color-portfolio-section-subheading);
+  font: var(--font-portfolio-section-subheading);
+  letter-spacing: 1.26px;
+  text-transform: uppercase;
+}
+
+.portfolio-section__heading {
+  margin-bottom: 7px;
+  color: var(--color-portfolio-section-heading);
+  font: var(--font-portfolio-section-heading);
+  letter-spacing: -0.98px;
+  text-transform: uppercase;
+}
+
+.portfolio-section__description {
+  --portfolio-section-description-max-width: 536px;
+  margin-bottom: 25px;
+  color: var(--color-portfolio-section-description);
+  font: var(--font-portfolio-section-description);
+  letter-spacing: 2.52px;
+  max-width: var(--portfolio-section-description-max-width);
+  text-transform: uppercase;
+}
+
+.portfolio-section__button {
+  margin-bottom: 15px;
+}

@@ -8,6 +8,7 @@
   letter-spacing: 1.4px;
   border: none;
   border-radius: $border-radius;
+  width: var(--button-width);
   display: flex;
   align-items: center;
   gap: 13px;
@@ -24,8 +25,10 @@
   //}
 
   &.-alternate {
+    --button-width: 188px;
     padding: 15px 26px 14px 23px;
-    gap: 24px;
+    justify-content: space-between;
+    gap: 0;
   }
 }
 
