@@ -1,6 +1,8 @@
 //Основные цвета
 $color-black: #000000;
 $color-black-opacity-light: rgba($color-black, 0.2);
+$color-black-opacity: rgba($color-black, 0.3);
+$color-black-opacity-medium: rgba($color-black, 0.6);
 $color-white: #ffffff;
 $color-beige-ivory: #F1EDE5;
 $color-beige-grey: #BEBAB4;
@@ -43,4 +45,14 @@ $color-green-dark: #004638;
   --color-main-section-heading: #{$color-black};
   --color-main-section-description: #{$color-grey-dark};
   --color-main-section-element-background: #{$color-green-dark};
+
+  //Services-section
+  --color-services-section-background: #{$color-beige-ivory};
+  --color-services-section-heading: #{$color-black};
+  --color-services-section-card-border: #{$color-black-opacity};
+  --color-services-section-card-subheading: #{$color-grey-dark};
+  --color-services-section-card-heading: #{$color-black};
+  --color-services-section-card-icon-box-shadow: #{$color-black-opacity};
+  --color-services-section-card-element-background: #{$color-green-dark};
+  --color-services-section-card-description: #{$color-black-opacity-medium};
 }
