@@ -1,0 +1,21 @@
+@use "../variables" as *;
+
+.scroll__wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.scroll__button {
+  --scroll-button-width: 6px;
+  --scroll-button-height: 6px;
+  background-color: var(--color-scroll-button);
+  border-radius: 50%;
+  width: var(--scroll-button-width);
+  height: var(--scroll-button-height);
+
+  &.-active {
+    --scroll-button-width: 24px;
+    background-color: var(--color-scroll-button-active);
+    border-radius: $border-radius-small;
+  }
+}

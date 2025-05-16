@@ -5,6 +5,7 @@ $font-family-main: "Roboto", "Arial", sans-serif;
 :root {
   --font-h1: 700 64px/70px #{$font-family-main};
   --font-h2: 700 50px/64px #{$font-family-main};
+  --font-h2-2: 700 50px/52px #{$font-family-main};
   --font-h3: 700 24px/28px #{$font-family-main};
   //--font-h4: 700 21px/21px #{$font-family-main};
   //--font-h5: 700 18px/18px #{$font-family-main};
@@ -53,4 +54,9 @@ $font-family-main: "Roboto", "Arial", sans-serif;
   --font-services-section-card-subheading: var(--font-small-regular);
   --font-services-section-card-heading: var(--font-h3);
   --font-services-section-card-description: var(--font-caption-light);
+
+  //Portfolio-section
+  --font-portfolio-section-subheading: var(--font-small-regular);
+  --font-portfolio-section-heading: var(--font-h2-2);
+  --font-portfolio-section-description: var(--font-body-regular);
 }
