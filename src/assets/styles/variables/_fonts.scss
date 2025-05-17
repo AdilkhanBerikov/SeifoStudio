@@ -13,11 +13,10 @@ $font-family-main: "Roboto", "Arial", sans-serif;
   //--font-h7: 700 38px/38px #{$font-family-main};
   //--font-h8: 700 20px/20px #{$font-family-main};
 
-  //--font-body-bold: 700 16px/18px #{$font-family-main};
-  //--font-body-bold-2: 700 14px/16px #{$font-family-main};
   --font-body-medium: 500 32px/56px #{$font-family-main};
   --font-body-regular: 400 18px/24px #{$font-family-main};
 
+  --font-caption-bold: 700 16px/26px #{$font-family-main};
   --font-caption-regular: 400 16px/15px #{$font-family-main};
   --font-caption-light: 300 16px/25px #{$font-family-main};
 
@@ -43,6 +42,12 @@ $font-family-main: "Roboto", "Arial", sans-serif;
 
   //Button
   --font-button: var(--font-small-regular);
+
+  //Field
+  --font-field-label: var(--font-caption-bold);
+  --font-field-input-text: var(--font-caption-regular);
+  --font-field-input-placeholder: var(--font-caption-regular);
+
 
   //Page-main
   //Main-section
@@ -70,4 +75,8 @@ $font-family-main: "Roboto", "Arial", sans-serif;
   //Faq
   --font-faq-heading: var(--font-h3);
   --font-faq-text: var(--font-body-regular);
+
+  //Feedback-section
+  --color-feedback-section-heading: var(--font-h2);
+  --font-feedback-section-subheading: var(--font-body-regular);
 }

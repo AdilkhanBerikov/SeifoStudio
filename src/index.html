@@ -347,6 +347,63 @@
       </div>
     </section>
 
+    <section class="feedback-section">
+      <div class="box">
+        <h2 class="feedback-section__heading">
+          Заказать звонок
+        </h2>
+        <p class="feedback-section__subheading">
+          Заполните форму и наши специалисты свяжутся с вами
+        </p>
+        <form class="feedback-form" action="#" method="post">
+          <div class="field">
+            <label class="field__label" for="name">Имя</label>
+            <input class="field__input"
+                   id="name"
+                   type="text"
+                   name="name"
+                   placeholder="Давид"
+                   maxlength="50"
+                   pattern="^[A-Za-z\s\-']+$"
+                   required>
+          </div>
+          <div class="field">
+            <label class="field__label" for="phone">Телефон</label>
+            <input class="field__input"
+                   id="phone"
+                   type="tel"
+                   name="phone"
+                   placeholder="+7"
+                   maxlength="20"
+                   pattern="^\+?[0-9\s\-()]{7,15}$"
+                   required>
+          </div>
+          <div class="field">
+            <label class="field__label" for="e-mail">Почта</label>
+            <input class="field__input"
+                   id="e-mail"
+                   type="email"
+                   name="email"
+                   placeholder="Example@SEIFO.STUDIO"
+                   maxlength="254" autocomplete="email"
+                   required>
+          </div>
+          <div class="feedback-form__submit">
+            <button class="button -alternate">
+              <span>Отправить</span>
+              <svg class="button__icon" aria-hidden="true">
+                <use xlink:href="assets/icons/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="feedback-section__element -circularity"></div>
+      <div class="feedback-section__element -triangle"></div>
+      <img class="feedback-section__element -warrior" src="assets/images/images/warrior-statue.png" alt="Warrior statue image">
+      <img class="feedback-section__element -cross" src="assets/images/illustration/cross.svg" alt="Page's illustration">
+    </section>
+
   </main>
 
   <footer class="page__footer">

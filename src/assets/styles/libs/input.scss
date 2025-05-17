@@ -12,6 +12,7 @@
   caret-color: var(--color-input-caret);
   outline: none;
   transition: border-bottom-color $transition-duration;
+  text-transform: uppercase;
 
   &::placeholder {
     font: var(--font-input-placeholder);

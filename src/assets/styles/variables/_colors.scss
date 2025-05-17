@@ -45,6 +45,14 @@ $color-green-dark: #004638;
   --color-scroll-button: #{$color-grey-light};
   --color-scroll-button-active: #{$color-green-dark};
 
+  //Field
+  --color-field-label: #{$color-black};
+  --color-field-input-border: #{$color-black-opacity-light};
+  --color-field-input-border-focus: #{$color-black};
+  --color-field-input-text: #{$color-grey-dark};
+  --color-field-input-caret: #{$color-black};
+  --color-field-input-placeholder-text: #{$color-grey-dark};
+
 
   //Page-main
   //Main-section
@@ -86,4 +94,10 @@ $color-green-dark: #004638;
   --color-faq-text: #{$color-grey-dark};
   --color-faq-toggle-border: #{$color-grey-dark};
   --color-faq-toggle-icon:  #{$color-grey-dark};
+
+  //Feedback-section
+  --color-feedback-section-background: #{$color-beige-ivory};
+  --color-feedback-section-heading: #{$color-black};
+  --color-feedback-section-subheading: #{$color-grey-dark};
+  --color-feedback-section-element-background: #{$color-green-dark};
 }
