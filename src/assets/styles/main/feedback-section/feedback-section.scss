@@ -1,0 +1,71 @@
+@use "../../variables" as *;
+
+.feedback-section {
+  padding-bottom: 217px;
+  position: relative;
+  background-color: var(--color-feedback-section-background);
+}
+
+.feedback-section__heading {
+  margin-bottom: 21px;
+  color: var(--color-feedback-section-heading);
+  font: var(--color-feedback-section-heading);
+  letter-spacing: -0.98px;
+  text-transform: uppercase;
+}
+
+.feedback-section__subheading {
+  margin-bottom: 47px;
+  color: var(--color-feedback-section-subheading);
+  font: var(--font-feedback-section-subheading);
+  letter-spacing: 2.52px;
+  text-transform: uppercase;
+}
+
+.feedback-section__element {
+  position: absolute;
+  width: var(--feedback-section-element-width);
+  height: var(--feedback-section-element-height);
+
+  &.-cross {
+    --feedback-section-element-width: 189px;
+    --feedback-section-element-height: 189px;
+    top: auto;
+    left: auto;
+    right: 684px;
+    bottom: 66px;
+  }
+
+  &.-warrior {
+    --feedback-section-element-width: 908px;
+    --feedback-section-element-height: 605px;
+    top: auto;
+    left: auto;
+    right: 69px;
+    bottom: 0;
+  }
+
+  &.-triangle {
+    --feedback-section-element-width: 181px;
+    --feedback-section-element-height: 157px;
+    top: 52px;
+    left: auto;
+    right: 500px;
+    bottom: auto;
+    border-left: calc(var(--feedback-section-element-width) / 2) solid transparent;
+    border-right: calc(var(--feedback-section-element-width) / 2) solid transparent;
+    border-bottom: var(--feedback-section-element-height) solid var(--color-feedback-section-element-background);
+    transform: rotate(30.1deg);
+  }
+
+  &.-circularity {
+    --feedback-section-element-width: 424px;
+    --feedback-section-element-height: 424px;
+    top: auto;
+    left: auto;
+    right: 150px;
+    bottom: 71px;
+    background-color: var(--color-feedback-section-element-background);
+    border-radius: 50%;
+  }
+}

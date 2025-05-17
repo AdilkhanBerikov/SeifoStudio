@@ -1,0 +1,12 @@
+@use "../../variables" as *;
+
+.feedback-form {
+  --feedback-form-max-width: 694px;
+  max-width: var(--feedback-form-max-width);
+  display: grid;
+  gap: 15px;
+}
+
+.feedback-form__submit {
+  margin-top: 15px;
+}
