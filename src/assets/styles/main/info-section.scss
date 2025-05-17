@@ -1,0 +1,77 @@
+@use "../variables" as *;
+
+.info-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--color-info-section-background);
+}
+
+.info-section__wrapper {
+  --info-section-wrapper-height: 560px;
+  padding: 106px 40px 0 105px;
+  position: relative;
+  border: 1px solid var(--color-info-section-wrapper-border);
+  border-radius: $border-radius-medium;
+  width: 100%;
+  height: var(--info-section-wrapper-height);
+  display: grid;
+  grid-template-columns: min-content 250px;
+  justify-content: space-between;
+}
+
+.info-section__heading {
+  margin-top: 6px;
+  color: var(--color-info-section-heading);
+  font: var(--font-info-section-heading);
+  letter-spacing: -0.98px;
+  text-transform: uppercase;
+}
+
+.info-section__title {
+  display: grid;
+  grid-template-rows: max-content min-content;
+  gap: 61px;
+}
+
+.info-section__description {
+  color: var(--color-info-section-description);
+  font: var(--font-info-section-description);
+  letter-spacing: 2.52px;
+  text-transform: uppercase;
+}
+
+.info-section__element {
+  position: absolute;
+  width: var(--info-section-element-width);
+  height: var(--info-section-element-height);
+
+  &.-circle {
+    --info-section-element-width: 174px;
+    --info-section-element-height: 177px;
+    top: auto;
+    left: 171px;
+    right: auto;
+    bottom: -27px;
+    border: 27px solid var(--color-info-section-element-background);
+    border-radius: 50%;
+  }
+
+  &.-cross {
+    --info-section-element-width: 226px;
+    --info-section-element-height: 226px;
+    top: auto;
+    left: auto;
+    right: 326px;
+    bottom: -69px;
+  }
+
+  &.-statue {
+    --info-section-element-width: 547px;
+    --info-section-element-height: 609px;
+    top: auto;
+    left: 50%;
+    right: auto;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+}

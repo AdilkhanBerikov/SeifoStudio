@@ -30,6 +30,17 @@
     justify-content: space-between;
     gap: 0;
   }
+
+  &.-transparent {
+    --button-width: 176px;
+    padding: 16px 0;
+    background-color: transparent;
+    border: 1px solid var(--color-button-transparent-border);
+    color: var(--color-button-transparent-text);
+    font-weight: 800;
+    justify-content: center;
+    gap: 0;
+  }
 }
 
 .button__icon {
