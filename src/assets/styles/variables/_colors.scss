@@ -38,6 +38,8 @@ $color-green-dark: #004638;
   //Button
   --color-button: #{$color-white};
   --color-button-background: #{$color-green-dark};
+  --color-button-transparent-text: #{$color-black};
+  --color-button-transparent-border: #{$color-black-opacity};
 
   //Scroll
   --color-scroll-button: #{$color-grey-light};
@@ -66,4 +68,11 @@ $color-green-dark: #004638;
   --color-portfolio-section-subheading: #{$color-grey-dark};
   --color-portfolio-section-heading: #{$color-black};
   --color-portfolio-section-description: #{$color-grey-dark};
+
+  //Info-section
+  --color-info-section-background: #{$color-beige-ivory};
+  --color-info-section-wrapper-border: #{$color-black-opacity};
+  --color-info-section-heading: #{$color-black};
+  --color-info-section-description: #{$color-grey-dark};
+  --color-info-section-element-background: #{$color-green-dark};
 }
