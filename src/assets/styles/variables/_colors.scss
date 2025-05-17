@@ -75,4 +75,15 @@ $color-green-dark: #004638;
   --color-info-section-heading: #{$color-black};
   --color-info-section-description: #{$color-grey-dark};
   --color-info-section-element-background: #{$color-green-dark};
+
+  //Faq-section
+  --color-faq-section-background: #{$color-beige-ivory};
+  --color-faq-section-heading: #{$color-black};
+  --color-faq-section-subheading: #{$color-grey-dark};
+  --color-faq-section-element-background: #{$color-green-dark};
+  //Faq
+  --color-faq-heading: #{$color-black};
+  --color-faq-text: #{$color-grey-dark};
+  --color-faq-toggle-border: #{$color-grey-dark};
+  --color-faq-toggle-icon:  #{$color-grey-dark};
 }

@@ -21,5 +21,8 @@
     </defs>
   </symbol>
 
+  <symbol id="icon-arrow-down" viewBox="0 0 16 13">
+    <path d="M0 0.831794L8.04419 12.7L16 0.699951L0 0.831794Z" fill="currentColor"/>
+  </symbol>
 
 </svg>
