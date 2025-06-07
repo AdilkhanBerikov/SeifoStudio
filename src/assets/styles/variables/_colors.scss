@@ -4,11 +4,13 @@ $color-black-opacity-light: rgba($color-black, 0.2);
 $color-black-opacity: rgba($color-black, 0.3);
 $color-black-opacity-medium: rgba($color-black, 0.6);
 $color-white: #ffffff;
+$color-white-opacity: rgba($color-white, 0.3);
 $color-beige-ivory: #F1EDE5;
 $color-beige-grey: #BEBAB4;
 $color-grey-graphite: #686B6B;
 $color-grey-dark: #5D5D5D;
 $color-grey-light: #D9D9D9;
+$color-grey-soft: #D9DDD5;
 $color-green-dark: #004638;
 
 
@@ -38,7 +40,11 @@ $color-green-dark: #004638;
   //Button
   --color-button: #{$color-white};
   --color-button-background: #{$color-green-dark};
+  --color-button-hover-box-shadow: #{$color-black-opacity-medium};
+  --color-button-active-box-shadow: #{$color-white-opacity};
   --color-button-transparent-text: #{$color-black};
+  --color-button-transparent-text-hover: #{$color-white};
+  --color-button-transparent-background-hover: #{$color-green-dark};
   --color-button-transparent-border: #{$color-black-opacity};
 
   //Scroll
@@ -100,4 +106,18 @@ $color-green-dark: #004638;
   --color-feedback-section-heading: #{$color-black};
   --color-feedback-section-subheading: #{$color-grey-dark};
   --color-feedback-section-element-background: #{$color-green-dark};
+
+
+  //Page-description
+  //Platform-section
+  --color-platform-section-background: #{$color-beige-ivory};
+  --color-platform-section-subheading: #{$color-grey-dark};
+  --color-platform-section-heading: #{$color-black};
+  --color-platform-section-description: #{$color-grey-dark};
+
+  //Description-section
+  --color-description-section-background: #{$color-beige-ivory};
+  --color-description-section-heading: #{$color-black};
+  --color-description-section-heading-before: #{$color-grey-soft};
+  --color-description-section-wrapper: #{$color-grey-dark};
 }

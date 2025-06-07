@@ -1,0 +1,42 @@
+@use "../variables" as *;
+
+.description-section {
+  padding-bottom: 139px;
+  background-color: var(--color-description-section-background);
+}
+
+.description-section__heading {
+  margin-bottom: 79px;
+  position: relative;
+  color: var(--color-description-section-heading);
+  font: var(--font-description-section-heading);
+  letter-spacing: -0.98px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 0;
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 10px;
+    left: 118px;
+    color: var(--color-description-section-heading-before);
+    font: var(--font-description-section-heading-before);
+    letter-spacing: -0.98px;
+    z-index: $z-index-negative;
+    white-space: nowrap;
+  }
+}
+
+.description-section__wrapper {
+  color: var(--color-description-section-wrapper);
+  font: var(--font-description-section-wrapper);
+  letter-spacing: 1px;
+  display: grid;
+  gap: 27px;
+}
+
+.description-section__list {
+  margin-left: 30px;
+  list-style-type: disc;
+}

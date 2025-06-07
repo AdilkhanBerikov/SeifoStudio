@@ -15,12 +15,15 @@ $font-family-main: "Roboto", "Arial", sans-serif;
 
   --font-body-medium: 500 32px/56px #{$font-family-main};
   --font-body-regular: 400 18px/24px #{$font-family-main};
+  --font-body-regular-2: 400 20px/24px #{$font-family-main};
 
   --font-caption-bold: 700 16px/26px #{$font-family-main};
   --font-caption-regular: 400 16px/15px #{$font-family-main};
   --font-caption-light: 300 16px/25px #{$font-family-main};
 
   --font-small-regular: 400 14px/20px #{$font-family-main};
+
+  --font-display: 900 90px/90px #{$font-family-main};
   //--font-body-light: 300 16px/18px #{$font-family-main};
   //
   //--font-caption-regular: 400 14px/14px #{$font-family-main};
@@ -79,4 +82,15 @@ $font-family-main: "Roboto", "Arial", sans-serif;
   //Feedback-section
   --color-feedback-section-heading: var(--font-h2);
   --font-feedback-section-subheading: var(--font-body-regular);
+
+  //Page-description
+  //Platform-section
+  --font-platform-section-subheading: var(--font-small-regular);
+  --font-platform-section-heading: var(--font-h2-2);
+  --font-platform-section-description: var(--font-body-regular);
+
+  //Description-section
+  --font-description-section-heading: var(--font-h2-2);
+  --font-description-section-heading-before: var(--font-display);
+  --font-description-section-wrapper: var(--font-body-regular-2);
 }
