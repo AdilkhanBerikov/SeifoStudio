@@ -34,11 +34,12 @@
 }
 
 .main-section__description {
+  --main-section-description-max-width: 612px;
   margin-bottom: 25px;
   color: var(--color-main-section-description);
   font: var(--font-main-section-description);
   letter-spacing: 2.52px;
-  text-transform: uppercase;
+  max-width: var(--main-section-description-max-width);
 }
 
 .main-section__socials-list {

@@ -8,7 +8,7 @@
 
 .info-section__wrapper {
   --info-section-wrapper-height: 560px;
-  padding: 106px 40px 0 105px;
+  padding: 106px 51px 0 105px;
   position: relative;
   border: 1px solid var(--color-info-section-wrapper-border);
   border-radius: $border-radius-medium;
@@ -30,14 +30,15 @@
 .info-section__title {
   display: grid;
   grid-template-rows: max-content min-content;
-  gap: 61px;
+  gap: 91px;
 }
 
 .info-section__description {
+  --info-section-description-max-width: 239px;
   color: var(--color-info-section-description);
   font: var(--font-info-section-description);
   letter-spacing: 2.52px;
-  text-transform: uppercase;
+  max-width: var(--info-section-description-max-width);
 }
 
 .info-section__element {

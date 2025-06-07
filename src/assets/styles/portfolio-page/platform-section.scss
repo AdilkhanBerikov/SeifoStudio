@@ -1,0 +1,71 @@
+@use "../variables" as *;
+
+.platform-section {
+  padding-top: 156px;
+  padding-bottom: 210px;
+  background-color: var(--color-platform-section-background);
+}
+
+.platform-section__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.platform-section__title {
+  margin-right: 30px;
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+}
+
+.platform-section__subheading {
+  color: var(--color-platform-section-subheading);
+  font: var(--font-platform-section-subheading);
+  letter-spacing: 1.26px;
+  text-transform: uppercase;
+}
+
+.platform-section__heading {
+  margin-bottom: 7px;
+  color: var(--color-platform-section-heading);
+  font: var(--font-platform-section-heading);
+  letter-spacing: -0.98px;
+  text-transform: uppercase;
+}
+
+.platform-section__description {
+  --platform-section-description-max-width: 547px;
+  margin-bottom: 25px;
+  color: var(--color-platform-section-description);
+  font: var(--font-platform-section-description);
+  letter-spacing: 2.52px;
+  max-width: var(--platform-section-description-max-width);
+}
+
+.platform-section__picture {
+  --platform-section-picture-width: 624px;
+  --platform-section-picture-height: 439px;
+  position: relative;
+  width: var(--platform-section-picture-width);
+  height: var(--platform-section-picture-height);
+  z-index: 0;
+}
+
+.platform-section__image {
+  position: absolute;
+  width: var(--platform-section-image-width);
+  height: var(--platform-section-image-height);
+
+  &.-platform {
+    --platform-section-image-width: 624px;
+    --platform-section-image-height: 439px;
+    top: 0;
+    left: 0;
+  }
+
+  &.-columns {
+    --platform-section-image-width: 436px;
+    --platform-section-image-height: 436px;
+    top: 127px;
+    left: 348px;
+  }
+}
