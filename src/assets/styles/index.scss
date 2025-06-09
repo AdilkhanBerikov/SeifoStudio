@@ -6,5 +6,7 @@
 @use "libs";
 @use "header";
 @use "footer";
-@use "main";
-@use "portfolio-page";
+@use "page-main";
+@use "page-portfolio";
+@use "page-about";
+@use "page-questions";

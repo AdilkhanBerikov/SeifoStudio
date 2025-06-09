@@ -60,7 +60,7 @@ $color-green-dark: #004638;
   --color-field-input-placeholder-text: #{$color-grey-dark};
 
 
-  //Page-main
+  //Page-page-main
   //Main-section
   --color-main-section-background: #{$color-beige-ivory};
   --color-main-section-heading: #{$color-black};
@@ -120,4 +120,16 @@ $color-green-dark: #004638;
   --color-description-section-heading: #{$color-black};
   --color-description-section-heading-before: #{$color-grey-soft};
   --color-description-section-wrapper: #{$color-grey-dark};
+
+  //Page-about
+  //About-section
+  --color-about-section-background: #{$color-beige-ivory};
+  --color-about-section-heading: #{$color-black};
+  --color-about-section-text: #{$color-grey-dark};
+  --color-about-section-element-background: #{$color-green-dark};
+
+  //Page-questions
+  //Questions-section
+  --color-questions-section-background: #{$color-beige-ivory};
+  --color-questions-section-heading: #{$color-black};
 }
