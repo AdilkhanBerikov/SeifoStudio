@@ -1,0 +1,21 @@
+@use "../variables" as *;
+
+.questions-section {
+  padding-top: 35px;
+  padding-bottom: 54px;
+  background-color: var(--color-questions-section-background);
+}
+
+.questions-section__heading {
+  margin-bottom: 59px;
+  color: var(--color-questions-section-heading);
+  font: var(--font-questions-section-heading);
+  letter-spacing: -0.98px;
+  text-transform: uppercase;
+}
+
+.questions-section__list {
+  margin-left: 78px;
+  display: grid;
+  gap: 74px;
+}

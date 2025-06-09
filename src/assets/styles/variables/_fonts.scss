@@ -7,11 +7,11 @@ $font-family-main: "Roboto", "Arial", sans-serif;
   --font-h2: 700 50px/64px #{$font-family-main};
   --font-h2-2: 700 50px/52px #{$font-family-main};
   --font-h3: 700 24px/28px #{$font-family-main};
-  //--font-h4: 700 21px/21px #{$font-family-main};
-  //--font-h5: 700 18px/18px #{$font-family-main};
-  //--font-h6: 700 17px/20px #{$font-family-main};
-  //--font-h7: 700 38px/38px #{$font-family-main};
-  //--font-h8: 700 20px/20px #{$font-family-main};
+  //--font-h4: 700 21px/21px #{$font-family-page-main};
+  //--font-h5: 700 18px/18px #{$font-family-page-main};
+  //--font-h6: 700 17px/20px #{$font-family-page-main};
+  //--font-h7: 700 38px/38px #{$font-family-page-main};
+  //--font-h8: 700 20px/20px #{$font-family-page-main};
 
   --font-body-medium: 500 32px/56px #{$font-family-main};
   --font-body-regular: 400 18px/24px #{$font-family-main};
@@ -24,11 +24,11 @@ $font-family-main: "Roboto", "Arial", sans-serif;
   --font-small-regular: 400 14px/20px #{$font-family-main};
 
   --font-display: 900 90px/90px #{$font-family-main};
-  //--font-body-light: 300 16px/18px #{$font-family-main};
+  //--font-body-light: 300 16px/18px #{$font-family-page-main};
   //
-  //--font-caption-regular: 400 14px/14px #{$font-family-main};
+  //--font-caption-regular: 400 14px/14px #{$font-family-page-main};
   //
-  //--font-tooltip: 400 20px/20px #{$font-family-main};
+  //--font-tooltip: 400 20px/20px #{$font-family-page-main};
 
   //Header
   --font-header-nav-link: var(--font-small-regular);
@@ -52,7 +52,7 @@ $font-family-main: "Roboto", "Arial", sans-serif;
   --font-field-input-placeholder: var(--font-caption-regular);
 
 
-  //Page-main
+  //Page-page-main
   //Main-section
   --font-main-section-heading: var(--font-h1);
   --font-main-section-description: var(--font-body-regular);
@@ -93,4 +93,13 @@ $font-family-main: "Roboto", "Arial", sans-serif;
   --font-description-section-heading: var(--font-h2-2);
   --font-description-section-heading-before: var(--font-display);
   --font-description-section-wrapper: var(--font-body-regular-2);
+
+  //Page-about
+  //About-section
+  --font-about-section-heading: var(--font-h2-2);
+  --font-about-section-text: var(--font-body-regular-2);
+
+  //Page-questions
+  //Questions-section
+  --font-questions-section-heading: var(--font-h2-2);
 }

@@ -1,0 +1,60 @@
+@use "../../variables" as *;
+
+.faq-section {
+  padding-top: 150px;
+  padding-bottom: 258px;
+  background-color: var(--color-faq-section-background);
+}
+
+.faq-section__wrapper {
+  position: relative;
+}
+
+.faq-section__title {
+  margin-bottom: 67px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.faq-section__heading {
+  color: var(--color-faq-section-heading);
+  font: var(--font-faq-section-heading);
+  letter-spacing: -0.98px;
+  text-transform: uppercase;
+}
+
+.faq-section__subheading {
+  color: var(--color-faq-section-subheading);
+  font: var(--font-faq-section-subheading);
+  letter-spacing: 2.52px;
+  text-transform: uppercase;
+}
+
+.faq-section__list {
+  margin-left: 78px;
+  margin-bottom: 64px;
+  display: grid;
+  gap: 74px;
+}
+
+.faq-section__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-section__element {
+  --faq-section-element-width: 174px;
+  --faq-section-element-height: 177px;
+  position: absolute;
+  top: auto;
+  left: 271px;
+  right: auto;
+  bottom: -109px;
+  border: 35px solid var(--color-faq-section-element-background);
+  border-radius: 50%;
+  width: var(--faq-section-element-width);
+  height: var(--faq-section-element-height);
+  z-index: $z-index-low;
+}
