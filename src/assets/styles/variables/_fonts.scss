@@ -48,8 +48,12 @@ $font-family-main: "Roboto", "Arial", sans-serif;
 
   //Field
   --font-field-label: var(--font-caption-bold);
-  --font-field-input-text: var(--font-caption-regular);
-  --font-field-input-placeholder: var(--font-caption-regular);
+  --font-field-input-text: var(--font-body-regular);
+  --font-field-input-placeholder: var(--font-body-regular);
+
+  //Faq
+  --font-faq-heading: var(--font-h3);
+  --font-faq-text: var(--font-body-regular);
 
 
   //Page-page-main
@@ -75,9 +79,6 @@ $font-family-main: "Roboto", "Arial", sans-serif;
   //Faq-section
   --font-faq-section-heading: var(--font-h2);
   --font-faq-section-subheading: var(--font-body-regular);
-  //Faq
-  --font-faq-heading: var(--font-h3);
-  --font-faq-text: var(--font-body-regular);
 
   //Feedback-section
   --color-feedback-section-heading: var(--font-h2);
@@ -102,4 +103,50 @@ $font-family-main: "Roboto", "Arial", sans-serif;
   //Page-questions
   //Questions-section
   --font-questions-section-heading: var(--font-h2-2);
+}
+
+@media (max-width: 767px) {
+  :root {
+    //--font-h1: 700 64px/70px #{$font-family-main};
+    --font-h2: 700 24px/28px #{$font-family-main};
+    --font-h2-2: 700 24px/28px #{$font-family-main};
+    --font-h3: 700 16px/20px #{$font-family-main};
+    --font-h3-mobile: 700 16px/18px #{$font-family-main};
+
+    //--font-body-medium: 500 32px/56px #{$font-family-main};
+    //--font-body-regular: 400 18px/24px #{$font-family-main};
+    --font-body-regular-mobile: 400 12px/14px #{$font-family-main};
+    --font-body-regular-mobile-2: 400 12px/16px #{$font-family-main};
+    //--font-body-regular-2: 400 20px/24px #{$font-family-main};
+    //
+    //--font-caption-bold: 700 16px/26px #{$font-family-main};
+    //--font-caption-regular: 400 16px/15px #{$font-family-main};
+    --font-caption-light: 300 12px/18px #{$font-family-main};
+    //
+    //--font-small-regular: 400 14px/20px #{$font-family-main};
+    --font-small-regular-mobile: 400 10px/14px #{$font-family-main};
+    //
+    //--font-display: 900 90px/90px #{$font-family-main};
+
+    //Footer
+    --font-footer-heading: var(--font-h3-mobile);
+
+    //Field
+    --font-field-input-text: var(--font-body-regular-mobile-2);
+    --font-field-input-placeholder: var(--font-body-regular-mobile-2);
+
+    //Faq
+    --font-faq-text: var(--font-body-regular-mobile-2);
+
+    //Page-page-main
+    //Main-section
+    --font-main-section-heading: var(--font-h2);
+    --font-main-section-description: var(--font-body-regular-mobile);
+
+    //Services-section
+    --font-services-section-card-subheading: var(--font-small-regular-mobile);
+
+    //Portfolio-section
+    --font-portfolio-section-description: var(--font-body-regular-mobile);
+  }
 }

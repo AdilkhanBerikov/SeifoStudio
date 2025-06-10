@@ -4,10 +4,20 @@
   padding-top: 150px;
   padding-bottom: 258px;
   background-color: var(--color-faq-section-background);
+
+  @media (max-width: $mobile-width) {
+    padding-top: 0;
+    padding-bottom: 73px;
+  }
 }
 
 .faq-section__wrapper {
   position: relative;
+
+  @media (max-width: $mobile-width) {
+    display: grid;
+    justify-content: center;
+  }
 }
 
 .faq-section__title {
@@ -15,6 +25,12 @@
   display: flex;
   justify-content: space-between;
   align-items: end;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 24px;
+    justify-content: start;
+    align-items: center;
+  }
 }
 
 .faq-section__heading {
@@ -29,6 +45,10 @@
   font: var(--font-faq-section-subheading);
   letter-spacing: 2.52px;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .faq-section__list {
@@ -36,6 +56,12 @@
   margin-bottom: 64px;
   display: grid;
   gap: 74px;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    margin-bottom: 25px;
+    gap: 25px;
+  }
 }
 
 .faq-section__button {
@@ -57,4 +83,8 @@
   width: var(--faq-section-element-width);
   height: var(--faq-section-element-height);
   z-index: $z-index-low;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }

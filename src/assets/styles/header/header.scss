@@ -1,8 +1,32 @@
 @use "../variables" as *;
 
+.header__logo {
+
+  @media (max-width: $mobile-width) {
+    display: grid;
+    justify-content: center;
+    grid-column: 2;
+  }
+}
+
 .header__nav {
   display: grid;
   justify-content: center;
+
+  @media (max-width: $mobile-width) {
+    justify-content: start;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.header__toggle {
+  display: none;
+  color: var(--color-header-toggle);
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
 }
 
 .header__nav-list {
@@ -10,6 +34,10 @@
   display: flex;
   align-items: center;
   gap: 44px;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .header__nav-link {
@@ -19,6 +47,13 @@
   outline: none;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.header__button {
+
+  @media (max-width: $mobile-width) {
+    grid-column: 3;
+  }
 }
 
 .header__button-wrapper {
@@ -32,6 +67,10 @@
   font: var(--font-header-button-text);
   letter-spacing: 1.4px;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .header__button-icon {

@@ -5,4 +5,9 @@
   margin-right: auto;
   padding-inline: 30px;
   max-width: 1340px;
+
+  @media (max-width: $mobile-width) {
+    padding-inline: 24px;
+    max-width: 393px;
+  }
 }

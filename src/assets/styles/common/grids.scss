@@ -8,12 +8,28 @@
     padding-bottom: 15px;
     grid-template-columns: max-content 1fr max-content;
     align-items: center;
+
+    @media (max-width: $mobile-width) {
+      padding-top: 15px;
+      padding-bottom: 0;
+      gap: 99px;
+    }
   }
 
   &.-footer {
     padding-top: 97px;
     padding-bottom: 214px;
+    padding-inline: 107px;
     grid-template-columns: 1fr min-content min-content;
+
+    @media (max-width: $mobile-width) {
+      padding-top: 35px;
+      padding-bottom: 28px;
+      padding-inline: 24px;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, max-content);
+      gap: 25px;
+    }
   }
 }
 

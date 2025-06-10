@@ -3,4 +3,8 @@
 .page__header {
   background-color: var(--color-header-background);
   border-bottom: 1px solid var(--color-header-border);
+
+  @media (max-width: $mobile-width) {
+    border-bottom: none;
+  }
 }

@@ -4,6 +4,10 @@
   padding-bottom: 217px;
   position: relative;
   background-color: var(--color-feedback-section-background);
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 371px;
+  }
 }
 
 .feedback-section__heading {
@@ -12,6 +16,10 @@
   font: var(--color-feedback-section-heading);
   letter-spacing: -0.98px;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .feedback-section__subheading {
@@ -19,7 +27,10 @@
   color: var(--color-feedback-section-subheading);
   font: var(--font-feedback-section-subheading);
   letter-spacing: 2.52px;
-  text-transform: uppercase;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .feedback-section__element {
@@ -34,6 +45,14 @@
     left: auto;
     right: 684px;
     bottom: 66px;
+
+    @media (max-width: $mobile-width) {
+      --feedback-section-element-width: 109.7px;
+      --feedback-section-element-height: 109.7px;
+      left: 5%;
+      right: auto;
+      bottom: 38px;
+    }
   }
 
   &.-warrior {
@@ -43,6 +62,15 @@
     left: auto;
     right: 69px;
     bottom: 0;
+
+    @media (max-width: $mobile-width) {
+      --feedback-section-element-width: 526.71px;
+      --feedback-section-element-height: 351.14px;
+      top: auto;
+      left: auto;
+      right: -20%;
+      bottom: 0;
+    }
   }
 
   &.-triangle {
@@ -56,6 +84,16 @@
     border-right: calc(var(--feedback-section-element-width) / 2) solid transparent;
     border-bottom: var(--feedback-section-element-height) solid var(--color-feedback-section-element-background);
     transform: rotate(30.1deg);
+
+    @media (max-width: $mobile-width) {
+      --feedback-section-element-width: 104px;
+      --feedback-section-element-height: 91px;
+      top: auto;
+      left: 22%;
+      right: auto;
+      bottom: 227px;
+      transform: rotate(-90deg);
+    }
   }
 
   &.-circularity {
@@ -67,5 +105,14 @@
     bottom: 71px;
     background-color: var(--color-feedback-section-element-background);
     border-radius: 50%;
+
+    @media (max-width: $mobile-width) {
+      --feedback-section-element-width: 246.09px;
+      --feedback-section-element-height: 246.09px;
+      top: auto;
+      left: auto;
+      right: -8%;
+      bottom: 41px;
+    }
   }
 }

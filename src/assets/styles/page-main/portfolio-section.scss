@@ -3,11 +3,20 @@
 .portfolio-section {
   padding-bottom: 113px;
   background-color: var(--color-portfolio-section-background);
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 80px;
+  }
 }
 
 .portfolio-section__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    display: grid;
+    justify-content: center;
+  }
 }
 
 .portfolio-section__picture {
@@ -17,6 +26,12 @@
   width: var(--portfolio-section-picture-width);
   height: var(--portfolio-section-picture-height);
   z-index: 0;
+
+  @media (max-width: $mobile-width) {
+    --portfolio-section-picture-width: 345px;
+    --portfolio-section-picture-height: 272.01px;
+    grid-row: 2;
+  }
 }
 
 .portfolio-section__image {
@@ -27,6 +42,12 @@
   left: -170px;
   width: var(--portfolio-section-image-width);
   height: var(--portfolio-section-image-height);
+
+  @media (max-width: $mobile-width) {
+    --portfolio-section-image-width: 434px;
+    --portfolio-section-image-height: 297px;
+    left: -89px;
+  }
 }
 
 .portfolio-section__title {
@@ -34,6 +55,12 @@
   margin-right: 21px;
   display: grid;
   grid-template-rows: repeat(5, min-content);
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .portfolio-section__subheading {
@@ -49,6 +76,18 @@
   font: var(--font-portfolio-section-heading);
   letter-spacing: -0.98px;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+}
+
+.portfolio-section__heading-break {
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .portfolio-section__description {
@@ -58,8 +97,18 @@
   font: var(--font-portfolio-section-description);
   letter-spacing: 2.52px;
   max-width: var(--portfolio-section-description-max-width);
+
+  @media (max-width: $mobile-width) {
+    --portfolio-section-description-max-width: 345px;
+    margin-bottom: 15px;
+    letter-spacing: 0;
+  }
 }
 
 .portfolio-section__button {
   margin-bottom: 15px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 10px;
+  }
 }
