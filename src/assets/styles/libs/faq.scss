@@ -3,12 +3,22 @@
 .faq__item {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    display: grid;
+    justify-content: start;
+    gap: 15px;
+  }
 }
 
 .faq__heading {
   color: var(--color-faq-heading);
   font: var(--font-faq-heading);
   max-width: 577px;
+
+  @media (max-width: $mobile-width) {
+    line-height: 16px;
+  }
 }
 
 .faq__content {
@@ -16,6 +26,12 @@
   justify-content: space-between;
   gap: 57px;
   max-width: 625px;
+
+  @media (max-width: $mobile-width) {
+    justify-content: start;
+    gap: 22px;
+    max-width: 345px;
+  }
 }
 
 .faq__text {
@@ -29,6 +45,11 @@
   text-overflow: ellipsis;
   transition: all 0.3s ease;
 
+  @media (max-width: $mobile-width) {
+    max-height: 64px;
+    -webkit-line-clamp: 4;
+  }
+
   &.-expanded {
     -webkit-line-clamp: unset;
     max-height: none;
@@ -38,6 +59,11 @@
 
 .faq__toggle-wrapper {
   margin-top: 12px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 0;
+    margin-bottom: 27px;
+  }
 }
 
 .faq__toggle {
@@ -51,6 +77,11 @@
   justify-content: center;
   align-items: center;
 
+  @media (max-width: $mobile-width) {
+    --faq-toggle-width: 36px;
+    --faq-toggle-height: 36px;
+  }
+
   &.-rotated .faq__toggle-icon {
     transform: rotate(180deg);
   }
@@ -63,4 +94,9 @@
   width: var(--faq-toggle-icon-width);
   height: var(--faq-toggle-icon-height);
   transition: transform 0.3s;
+
+  @media (max-width: $mobile-width) {
+    --faq-toggle-icon-width: 12px;
+    --faq-toggle-icon-height: 10px;
+  }
 }

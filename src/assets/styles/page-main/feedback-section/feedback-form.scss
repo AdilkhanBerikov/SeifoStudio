@@ -5,8 +5,19 @@
   max-width: var(--feedback-form-max-width);
   display: grid;
   gap: 15px;
+
+  @media (max-width: $mobile-width) {
+    --feedback-form-max-width: 345px;
+    max-width: var(--feedback-form-max-width);
+    display: grid;
+    gap: 11px;
+  }
 }
 
 .feedback-form__submit {
   margin-top: 15px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 14px;
+  }
 }

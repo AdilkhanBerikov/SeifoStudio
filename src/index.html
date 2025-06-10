@@ -16,6 +16,11 @@
         </picture>
       </a>
       <nav class="header__nav">
+        <button class="header__toggle toggle">
+          <svg class="header__toggle-icon" width="18" height="18" aria-hidden="true">
+            <use xlink:href="assets/icons/icons.svg#icon-toggle-header"></use>
+          </svg>
+        </button>
         <ul class="header__nav-list">
           <li class="header__nav-item">
             <a class="header__nav-link" href="index.html">
@@ -121,13 +126,13 @@
     <section class="services-section">
       <div class="box services-section__wrapper">
         <h2 class="services-section__heading">
-          Список<br>
+          Список<br class="services-section__heading-break">
           услуг
         </h2>
         <div class="services-section__cards">
           <div class="services-section__card -alternate">
-            <div class="services-section__subheading-wrapper">
-              <p class="services-section__card-subheading">
+            <div class="services-section__subheading-wrapper -alternate">
+              <p class="services-section__card-subheading -alternate">
                 Веб-разработка
               </p>
             </div>
@@ -186,7 +191,7 @@
             Портфолио
           </p>
           <h2 class="portfolio-section__heading">
-            Платформа<br>
+            Платформа<br class="portfolio-section__heading-break">
             “Генератор”
           </h2>
           <p class="portfolio-section__description">
@@ -228,7 +233,7 @@
           <img class="info-section__element -cross" src="assets/images/illustration/cross.svg" alt="Illustration">
           <div class="info-section__element -circle"></div>
           <h2 class="info-section__heading">
-            Информация<br>
+            Информация<br class="info-section__heading-break">
             о компании
           </h2>
           <div class="info-section__title">
@@ -408,7 +413,7 @@
 
   <footer class="page__footer">
     <div class="box grid -footer">
-      <div class="footer__wrapper">
+      <div class="footer__wrapper -alternate">
         <a class="footer__logo" href="index.html">
           <picture class="footer__picture">
             <img class="footer__image" src="assets/images/logo/logo.svg" width="121" height="51" alt="Logotype Seifo Studio">
@@ -420,7 +425,7 @@
           без головной боли<br>
         </h2>
       </div>
-      <div class="footer__wrapper">
+      <div class="footer__wrapper -nav">
         <nav class="footer__nav">
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
@@ -480,9 +485,9 @@
           </ul>
         </div>
       </div>
-      <div class="footer__wrapper -alternate">
+      <div class="footer__wrapper -secondary">
         <h3 class="footer__description">
-          Seifo Studio — студия
+          Seifo Studio — студия<br>
           цифровой разработки
         </h3>
         <form class="footer__form" action="#" method="post">

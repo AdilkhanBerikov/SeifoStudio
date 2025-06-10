@@ -19,6 +19,7 @@ $color-green-dark: #004638;
   //Header
   --color-header-background: #{$color-beige-ivory};
   --color-header-border: #{$color-beige-grey};
+  --color-header-toggle: #{$color-black};
   --color-header-nav-link: #{$color-black};
   --color-header-button-text: #{$color-black};
   --color-header-button-icon: #{$color-grey-graphite};
@@ -132,4 +133,12 @@ $color-green-dark: #004638;
   //Questions-section
   --color-questions-section-background: #{$color-beige-ivory};
   --color-questions-section-heading: #{$color-black};
+}
+
+@media (max-width: 767px) {
+  :root {
+    /* Компонентные цвета */
+    //Header
+    --color-header-button-icon: #{$color-black};
+  }
 }

@@ -4,6 +4,11 @@
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: var(--color-info-section-background);
+
+  @media (max-width: $mobile-width) {
+    padding-top: 0;
+    padding-bottom: 55px;
+  }
 }
 
 .info-section__wrapper {
@@ -17,6 +22,13 @@
   display: grid;
   grid-template-columns: min-content 250px;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    --info-section-wrapper-height: 630px;
+    padding: 382px 16px 16px 16px;
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
 }
 
 .info-section__heading {
@@ -25,12 +37,28 @@
   font: var(--font-info-section-heading);
   letter-spacing: -0.98px;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+}
+
+.info-section__heading-break {
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .info-section__title {
   display: grid;
   grid-template-rows: max-content min-content;
   gap: 91px;
+
+  @media (max-width: $mobile-width) {
+    gap: 19px;
+  }
 }
 
 .info-section__description {
@@ -39,6 +67,10 @@
   font: var(--font-info-section-description);
   letter-spacing: 2.52px;
   max-width: var(--info-section-description-max-width);
+
+  @media (max-width: $mobile-width) {
+    --info-section-description-max-width: 315px;
+  }
 }
 
 .info-section__element {
@@ -55,6 +87,15 @@
     bottom: -27px;
     border: 27px solid var(--color-info-section-element-background);
     border-radius: 50%;
+
+    @media (max-width: $mobile-width) {
+      --info-section-element-width: 120px;
+      --info-section-element-height: 120px;
+      top: 12px;
+      left: 26px;
+      bottom: auto;
+      border: 19px solid var(--color-info-section-element-background);
+    }
   }
 
   &.-cross {
@@ -64,6 +105,15 @@
     left: auto;
     right: 326px;
     bottom: -69px;
+
+    @media (max-width: $mobile-width) {
+      --info-section-element-width: 133.02px;
+      --info-section-element-height: 133.02px;
+      top: 229px;
+      left: auto;
+      right: 14px;
+      bottom: auto;
+    }
   }
 
   &.-statue {
@@ -74,5 +124,12 @@
     right: auto;
     bottom: 0;
     transform: translateX(-50%);
+
+    @media (max-width: $mobile-width) {
+      --info-section-element-width: 321.96px;
+      --info-section-element-height: 380.23px;
+      top: -37px;
+      bottom: auto;
+    }
   }
 }

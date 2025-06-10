@@ -22,6 +22,10 @@
   outline: none;
   transition: border-bottom-color $transition-duration;
 
+  @media (max-width: $mobile-width) {
+    padding: 12px 12px;
+  }
+
   &::placeholder {
     font: var(--font-field-input-placeholder);
     color: var(--color-field-input-placeholder-text);
