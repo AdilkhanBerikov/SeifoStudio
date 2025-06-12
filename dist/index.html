@@ -14,11 +14,13 @@
         </picture>
       </a>
       <nav class="header__nav">
-        <button class="header__toggle toggle">
-          <svg class="header__toggle-icon" width="18" height="18" aria-hidden="true">
-            <use xlink:href="/icons.8f9fc07b.svg#icon-toggle-header"></use>
-          </svg>
-        </button>
+        <div class="header__toggle">
+          <button class="toggle js-menu-open">
+            <svg class="toggle-icon" width="18" height="18" aria-hidden="true">
+              <use xlink:href="/icons.8f9fc07b.svg#icon-toggle-header"></use>
+            </svg>
+          </button>
+        </div>
         <ul class="header__nav-list">
           <li class="header__nav-item">
             <a class="header__nav-link" href="/index.html">
@@ -57,6 +59,81 @@
       </div>
     </div>
   </header>
+
+  <section class="mobile-menu">
+    <div class="mobile-menu__wrapper">
+      <div class="mobile-menu__header">
+        <div class="mobile-menu__toggle">
+          <button class="toggle js-menu-close">
+            <svg class="toggle__icon" width="18" height="18" aria-hidden="true">
+              <use xlink:href="/icons.8f9fc07b.svg#icon-toggle-header"></use>
+            </svg>
+          </button>
+        </div>
+        <a class="mobile-menu__logo" href="/index.html">
+          <picture class="mobile-menu__picture">
+            <img class="mobile-menu__image" src="/logo.9032ea0c.svg" width="116" height="51" alt="Logotype Seifo Studio">
+          </picture>
+        </a>
+      </div>
+      <ul class="mobile-menu__nav-list">
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link" href="/index.html">
+            Главная
+          </a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link" href="#">
+            Услуги
+          </a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link" href="/portfolio.html">
+            Портфолио
+          </a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link" href="/about.html">
+            О компании
+          </a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link" href="#">
+            Контакты
+          </a>
+        </li>
+      </ul>
+      <div class="mobile-menu__socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link link" href="#">
+              <img class="socials__image" src="/socials-facebook.d91c0894.svg" width="25" height="25" alt="Facebook Seifo Studio">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link link" href="#">
+              <img class="socials__image" src="/socials-behance.952076fa.svg" width="25" height="25" alt="Behance Seifo Studio">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link link" href="#">
+              <img class="socials__image" src="/socials-linkedin.6d4c02f9.svg" width="25" height="25" alt="LinkedIn Seifo Studio">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link link" href="#">
+              <img class="socials__image" src="/socials-instagram.80ce0bdd.svg" width="25" height="25" alt="Instagram Seifo Studio">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link link" href="#">
+              <img class="socials__image" src="/socials-dribbble.7235e173.svg" width="25" height="25" alt="Dribbble Seifo Studio">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <main class="page__main">
 
@@ -227,9 +304,9 @@
     <section class="info-section">
       <div class="box">
         <div class="info-section__wrapper">
+          <div class="info-section__element -circle"></div>
           <img class="info-section__element -statue" src="/philosopher-statue-2.36d7b1e2.png" alt="philosopher statue image">
           <img class="info-section__element -cross" src="/cross.fb87eef9.svg" alt="Illustration">
-          <div class="info-section__element -circle"></div>
           <h2 class="info-section__heading">
             Информация<br class="info-section__heading-break">
             о компании
@@ -434,30 +511,30 @@
           </ul>
         </nav>
         <div class="footer__socials">
-          <ul class="footer__socials-list">
-            <li class="footer__socials-item">
-              <a class="footer__socials-link link" href="#">
-                <img class="footer__socials-image" src="/socials-facebook.d91c0894.svg" width="25" height="25" alt="Facebook Seifo Studio">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link link" href="#">
+                <img class="socials__image" src="/socials-facebook.d91c0894.svg" width="25" height="25" alt="Facebook Seifo Studio">
               </a>
             </li>
-            <li class="footer__socials-item">
-              <a class="footer__socials-link link" href="#">
-                <img class="footer__socials-image" src="/socials-behance.952076fa.svg" width="25" height="25" alt="Behance Seifo Studio">
+            <li class="socials__item">
+              <a class="socials__link link" href="#">
+                <img class="socials__image" src="/socials-behance.952076fa.svg" width="25" height="25" alt="Behance Seifo Studio">
               </a>
             </li>
-            <li class="footer__socials-item">
-              <a class="footer__socials-link link" href="#">
-                <img class="footer__socials-image" src="/socials-linkedin.6d4c02f9.svg" width="25" height="25" alt="LinkedIn Seifo Studio">
+            <li class="socials__item">
+              <a class="socials__link link" href="#">
+                <img class="socials__image" src="/socials-linkedin.6d4c02f9.svg" width="25" height="25" alt="LinkedIn Seifo Studio">
               </a>
             </li>
-            <li class="footer__socials-item">
-              <a class="footer__socials-link link" href="#">
-                <img class="footer__socials-image" src="/socials-instagram.80ce0bdd.svg" width="25" height="25" alt="Instagram Seifo Studio">
+            <li class="socials__item">
+              <a class="socials__link link" href="#">
+                <img class="socials__image" src="/socials-instagram.80ce0bdd.svg" width="25" height="25" alt="Instagram Seifo Studio">
               </a>
             </li>
-            <li class="footer__socials-item">
-              <a class="footer__socials-link link" href="#">
-                <img class="footer__socials-image" src="/socials-dribbble.7235e173.svg" width="25" height="25" alt="Dribbble Seifo Studio">
+            <li class="socials__item">
+              <a class="socials__link link" href="#">
+                <img class="socials__image" src="/socials-dribbble.7235e173.svg" width="25" height="25" alt="Dribbble Seifo Studio">
               </a>
             </li>
           </ul>
@@ -492,5 +569,6 @@
 
   <script src="/SeifoStudio.31b563d9.js" type="module"></script>
   <script src="/SeifoStudio.a6cec8eb.js" type="module"></script>
+  <script src="/SeifoStudio.35ee875a.js" type="module"></script>
 
 </body></html>

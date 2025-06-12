@@ -109,16 +109,6 @@
   white-space: nowrap;
 }
 
-.footer__socials-list {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-
-  @media (max-width: $mobile-width) {
-    justify-content: center;
-  }
-}
-
 .footer__description {
   margin-bottom: 50px;
   color: var(--color-footer-description);
@@ -128,6 +118,7 @@
 
   @media (max-width: $mobile-width) {
     margin-bottom: 0;
+    text-transform: none;
   }
 }
 

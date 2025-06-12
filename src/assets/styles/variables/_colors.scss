@@ -24,6 +24,11 @@ $color-green-dark: #004638;
   --color-header-button-text: #{$color-black};
   --color-header-button-icon: #{$color-grey-graphite};
 
+  //Mobile-menu
+  --color-mobile-menu-background: #{$color-black-opacity-medium};
+  --color-mobile-menu-wrapper-background: #{$color-beige-ivory};
+  --color-mobile-menu-nav-link: #{$color-black};
+
   //Footer
   --color-footer-background: #{$color-beige-ivory};
   --color-footer-border: #{$color-beige-grey};
