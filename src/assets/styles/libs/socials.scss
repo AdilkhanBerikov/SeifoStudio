@@ -1,0 +1,11 @@
+@use "../variables" as *;
+
+.socials__list {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+  }
+}

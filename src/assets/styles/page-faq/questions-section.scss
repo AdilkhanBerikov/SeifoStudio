@@ -4,6 +4,10 @@
   padding-top: 35px;
   padding-bottom: 54px;
   background-color: var(--color-questions-section-background);
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 42px;
+  }
 }
 
 .questions-section__heading {
@@ -12,10 +16,19 @@
   font: var(--font-questions-section-heading);
   letter-spacing: -0.98px;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .questions-section__list {
   margin-left: 78px;
   display: grid;
   gap: 74px;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    gap: 25px;
+  }
 }

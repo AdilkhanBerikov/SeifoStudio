@@ -16,6 +16,11 @@
       </picture>
     </a>
     <nav class="header__nav">
+      <button class="header__toggle toggle">
+        <svg class="header__toggle-icon" width="18" height="18" aria-hidden="true">
+          <use xlink:href="assets/icons/icons.svg#icon-toggle-header"></use>
+        </svg>
+      </button>
       <ul class="header__nav-list">
         <li class="header__nav-item">
           <a class="header__nav-link" href="index.html">
@@ -28,12 +33,12 @@
           </a>
         </li>
         <li class="header__nav-item">
-          <a class="header__nav-link" href="#">
+          <a class="header__nav-link" href="portfolio.html">
             Портфолио
           </a>
         </li>
         <li class="header__nav-item">
-          <a class="header__nav-link" href="#">
+          <a class="header__nav-link" href="about.html">
             О компании
           </a>
         </li>
@@ -85,10 +90,20 @@
             </svg>
           </button>
         </div>
+        <div class="platform-section__scroll">
+          <div class="scroll__wrapper">
+            <button class="scroll__button -active"></button>
+            <button class="scroll__button"></button>
+            <button class="scroll__button"></button>
+            <button class="scroll__button"></button>
+            <button class="scroll__button"></button>
+          </div>
+        </div>
       </div>
       <div class="platform-section__picture">
         <img class="platform-section__image -platform" src="assets/images/images/platform-generator-2.png" alt="Portfolio - Generator platform project">
         <img class="platform-section__image -columns" src="assets/images/images/ancient-columns-image-2.png" alt="Ancient columns image">
+        <img class="platform-section__image -iphone" src="assets/images/images/iphone15pro.png" alt="iphone 15 pro image">
       </div>
     </div>
   </section>
@@ -201,7 +216,7 @@
             </p>
           </li>
         </ul>
-        <h3 class="description-section__subheading">Конкретные функции программиста на платформе:</h3>
+        <h3 class="description-section__subheading">Конкретные функции и возможности, которые программист реализует на платформе:</h3>
         <ul class="description-section__list">
           <li>Регистрация, авторизация и управление профилями пользователей.</li>
           <li>Создание и управление командами и проектами инженеров.</li>
@@ -219,7 +234,7 @@
 
 <footer class="page__footer">
   <div class="box grid -footer">
-    <div class="footer__wrapper">
+    <div class="footer__wrapper -alternate">
       <a class="footer__logo" href="index.html">
         <picture class="footer__picture">
           <img class="footer__image" src="assets/images/logo/logo.svg" width="121" height="51" alt="Logotype Seifo Studio">
@@ -231,7 +246,7 @@
         без головной боли<br>
       </h2>
     </div>
-    <div class="footer__wrapper">
+    <div class="footer__wrapper -nav">
       <nav class="footer__nav">
         <ul class="footer__nav-list">
           <li class="footer__nav-item">
@@ -263,37 +278,37 @@
       </nav>
       <div class="footer__socials">
         <ul class="footer__socials-list">
-          <li class="footer__socials-item">
-            <a class="footer__socials-link link" href="#">
-              <img class="footer__socials-image" src="assets/images/icons/socials-facebook.svg" width="25" height="25" alt="Facebook Seifo Studio">
+          <li class="socials__item">
+            <a class="socials__link link" href="#">
+              <img class="socials__image" src="assets/images/icons/socials-facebook.svg" width="25" height="25" alt="Facebook Seifo Studio">
             </a>
           </li>
-          <li class="footer__socials-item">
-            <a class="footer__socials-link link" href="#">
-              <img class="footer__socials-image" src="assets/images/icons/socials-behance.svg" width="25" height="25" alt="Behance Seifo Studio">
+          <li class="socials__item">
+            <a class="socials__link link" href="#">
+              <img class="socials__image" src="assets/images/icons/socials-behance.svg" width="25" height="25" alt="Behance Seifo Studio">
             </a>
           </li>
-          <li class="footer__socials-item">
-            <a class="footer__socials-link link" href="#">
-              <img class="footer__socials-image" src="assets/images/icons/socials-linkedin.svg" width="25" height="25" alt="LinkedIn Seifo Studio">
+          <li class="socials__item">
+            <a class="socials__link link" href="#">
+              <img class="socials__image" src="assets/images/icons/socials-linkedin.svg" width="25" height="25" alt="LinkedIn Seifo Studio">
             </a>
           </li>
-          <li class="footer__socials-item">
-            <a class="footer__socials-link link" href="#">
-              <img class="footer__socials-image" src="assets/images/icons/socials-instagram.svg" width="25" height="25" alt="Instagram Seifo Studio">
+          <li class="socials__item">
+            <a class="socials__link link" href="#">
+              <img class="socials__image" src="assets/images/icons/socials-instagram.svg" width="25" height="25" alt="Instagram Seifo Studio">
             </a>
           </li>
-          <li class="footer__socials-item">
-            <a class="footer__socials-link link" href="#">
-              <img class="footer__socials-image" src="assets/images/icons/socials-dribbble.svg" width="25" height="25" alt="Dribbble Seifo Studio">
+          <li class="socials__item">
+            <a class="socials__link link" href="#">
+              <img class="socials__image" src="assets/images/icons/socials-dribbble.svg" width="25" height="25" alt="Dribbble Seifo Studio">
             </a>
           </li>
         </ul>
       </div>
     </div>
-    <div class="footer__wrapper -alternate">
+    <div class="footer__wrapper -secondary">
       <h3 class="footer__description">
-        Seifo Studio — студия
+        Seifo Studio — студия<br>
         цифровой разработки
       </h3>
       <form class="footer__form" action="#" method="post">

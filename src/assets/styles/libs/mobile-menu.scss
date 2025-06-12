@@ -1,0 +1,63 @@
+@use "../variables" as *;
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-mobile-menu-background);
+  z-index: $z-index-lg;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity $transition-duration ease,
+    visibility $transition-duration ease;
+
+  &.-open {
+    opacity: 1;
+    visibility: visible;
+
+    .mobile-menu__wrapper {
+      transform: translateX(0);
+    }
+  }
+}
+
+.mobile-menu__wrapper {
+  --mobile-menu-wrapper-width: 293px;
+  padding: 15px 24px 40px 24px;
+  background-color: var(--color-mobile-menu-wrapper-background);
+  width: var(--mobile-menu-wrapper-width);
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu__header {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  gap: 49px;
+}
+
+.mobile-menu__nav-list {
+  padding-top: 40px;
+  display: grid;
+  grid-template-rows: repeat(5, min-content);
+  justify-content: center;
+  gap: 25px;
+}
+
+.mobile-menu__nav-item {
+  text-align: center;
+}
+
+.mobile-menu__nav-link {
+  color: var(--color-mobile-menu-nav-link);
+  font: var(--font-mobile-menu-nav-link);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}

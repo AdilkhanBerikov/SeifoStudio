@@ -3,6 +3,10 @@
 .description-section {
   padding-bottom: 139px;
   background-color: var(--color-description-section-background);
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 5px;
+  }
 }
 
 .description-section__heading {
@@ -15,6 +19,10 @@
   white-space: nowrap;
   z-index: 0;
 
+  @media (max-width: $mobile-width) {
+    margin-bottom: 44px;
+  }
+
   &::before {
     content: attr(data-text);
     position: absolute;
@@ -25,6 +33,11 @@
     letter-spacing: -0.98px;
     z-index: $z-index-negative;
     white-space: nowrap;
+
+    @media (max-width: $mobile-width) {
+      top: 1px;
+      left: 11px;
+    }
   }
 }
 
@@ -34,9 +47,17 @@
   letter-spacing: 1px;
   display: grid;
   gap: 27px;
+
+  @media (max-width: $mobile-width) {
+    gap: 21px;
+  }
 }
 
 .description-section__list {
   margin-left: 30px;
   list-style-type: disc;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 24px;
+  }
 }

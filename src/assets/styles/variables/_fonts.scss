@@ -16,6 +16,7 @@ $font-family-main: "Roboto", "Arial", sans-serif;
   --font-body-medium: 500 32px/56px #{$font-family-main};
   --font-body-regular: 400 18px/24px #{$font-family-main};
   --font-body-regular-2: 400 20px/24px #{$font-family-main};
+  --font-body-regular-3: 400 12px/20px #{$font-family-main};
 
   --font-caption-bold: 700 16px/26px #{$font-family-main};
   --font-caption-regular: 400 16px/15px #{$font-family-main};
@@ -33,6 +34,9 @@ $font-family-main: "Roboto", "Arial", sans-serif;
   //Header
   --font-header-nav-link: var(--font-small-regular);
   --font-header-button-text: var(--font-small-regular);
+
+  //Mobile-menu
+  --font-mobile-menu-nav-link: var(--font-body-regular-3);
 
   //Footer
   --font-footer-heading: var(--font-body-medium);
@@ -56,7 +60,7 @@ $font-family-main: "Roboto", "Arial", sans-serif;
   --font-faq-text: var(--font-body-regular);
 
 
-  //Page-page-main
+  //Page-main
   //Main-section
   --font-main-section-heading: var(--font-h1);
   --font-main-section-description: var(--font-body-regular);
@@ -117,7 +121,7 @@ $font-family-main: "Roboto", "Arial", sans-serif;
     //--font-body-regular: 400 18px/24px #{$font-family-main};
     --font-body-regular-mobile: 400 12px/14px #{$font-family-main};
     --font-body-regular-mobile-2: 400 12px/16px #{$font-family-main};
-    //--font-body-regular-2: 400 20px/24px #{$font-family-main};
+    --font-body-regular-2: 400 16px/18px #{$font-family-main};
     //
     //--font-caption-bold: 700 16px/26px #{$font-family-main};
     //--font-caption-regular: 400 16px/15px #{$font-family-main};
@@ -126,7 +130,7 @@ $font-family-main: "Roboto", "Arial", sans-serif;
     //--font-small-regular: 400 14px/20px #{$font-family-main};
     --font-small-regular-mobile: 400 10px/14px #{$font-family-main};
     //
-    //--font-display: 900 90px/90px #{$font-family-main};
+    --font-display: 900 48px/52px #{$font-family-main};
 
     //Footer
     --font-footer-heading: var(--font-h3-mobile);
@@ -148,5 +152,9 @@ $font-family-main: "Roboto", "Arial", sans-serif;
 
     //Portfolio-section
     --font-portfolio-section-description: var(--font-body-regular-mobile);
+
+    //Page-description
+    //Platform-section
+    --font-platform-section-description: var(--font-body-regular-mobile);
   }
 }
